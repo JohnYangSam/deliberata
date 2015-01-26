@@ -44,6 +44,20 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 10px 0px 0px;
 }
 
+.detail-header h4 {
+  color: #545454;
+}
+
+.detail-section.home h1 {
+  padding-left: 10px;
+  color: #D3D3D3;
+}
+.detail-section.home p {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #D3D3D3;
+}
+
 .detail-header {
   height: 200px;
   padding: 10px;
@@ -54,7 +68,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 20px;
   margin-bottom: 10px;
   height: 420px;
-  background-color: #000;
 }
 
 /* Right hand grid styling */
