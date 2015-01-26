@@ -110,9 +110,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: rgba(255,255,255, .3);
 }
 
+/*
 .back p:hover {
   color: rgba(255,255,255, .3);
 }
+*/
 
 /* Flip piece size card */
 .flip-container.card, .front.card, .back.card {
