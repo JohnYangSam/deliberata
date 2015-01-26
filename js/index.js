@@ -18,11 +18,30 @@ $('.flip-container').hover(function (event) {
 
 
 /* Card clicking */
-$('.back').click(function (event) {
+$('.back#projects-card').click(function (event) {
   // JQuery 'this' needs to be wrapped in a JQuery syntax
-  $.fn.fullpage.moveSlideRight();
+  $.fn.fullpage.moveSlideLeft();
   console.log($(this).data("link"));
 });
+
+$('.back#social-sketches-card').click(function (event) {
+  // JQuery 'this' needs to be wrapped in a JQuery syntax
+  $.fn.fullpage.moveTo("sketches-section", 0);
+  console.log($(this).data("link"));
+});
+
+$('.back.back-card').click(function (event) {
+  // JQuery 'this' needs to be wrapped in a JQuery syntax
+  $.fn.fullpage.moveSlideLeft();
+  console.log($(this).data("link"));
+});
+
+$('.back#back-project').click(function (event) {
+  // JQuery 'this' needs to be wrapped in a JQuery syntax
+  $.fn.fullpage.moveTo("main-section", 1);
+  console.log($(this).data("link"));
+});
+
 /*
 $('.flip-container').click(function (event) {
   // JQuery 'this' needs to be wrapped in a JQuery syntax

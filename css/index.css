@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: -10;
 }
 
+.display-image {
+  padding: 50px;
+}
+
 /* Top navigation */
 
 .left li a:hover {
@@ -106,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 
-.back h1, .back h2, .back h3 {
+.back h1, .back h2, .back h3, .back h4 {
   color: rgba(255,255,255, .3);
 }
 
@@ -116,6 +120,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 */
 
+.font.detail, .back.detail {
+  width: 200px;
+  height: 200px;
+}
+
 /* Flip piece size card */
 .flip-container.card, .front.card, .back.card {
   box-sizing:border-box;
@@ -124,11 +133,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Flip piece size card 2x */
-.flip-container.card-2x, .front.card-2x, .back.card-2x {
+/*
+.flip-container.card.small, .front.card.small, .back.card.small {
   box-sizing:border-box;
-  width: 400px;
-  height: 200px;
+  width: 90px;
+  height: 90px;
 }
+*/
 
 /* Card flipping */
 
