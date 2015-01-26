@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Main Content Styling */
 #content-container {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 /* Left hand detail container row */
@@ -37,8 +37,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .detail-content {
-  height: 200px;
   margin: 10px 0px 0px;
+}
+
+.detail-header {
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 420px;
+  background-color: #000;
 }
 
 /* Right hand grid styling */
@@ -61,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p {
   float: left;
 }
 
-
+/* Front Styling */
 .front, .back {
   padding: 10px;
   text-align: center;
@@ -81,11 +93,39 @@ h1, h2, h3, h4, h5, h6, p {
 
 .front-text-container {
   padding: 5px; 
-  background-color:rgba(204,204,204, 0.5)  
+  background-color:rgba(204,204,204, 0.5);
 }
 
 .front h2 {
   opacity: 1.0;
+}
+
+/* Back styling */
+.back {
+  background: rgba(0,0,0, .9);
+  color: white;
+}
+
+.back h1, .back h2, .back h3 {
+  color: rgba(255,255,255, .3);
+}
+
+.back p:hover {
+  color: rgba(255,255,255, .3);
+}
+
+/* Flip piece size card */
+.flip-container.card, .front.card, .back.card {
+  box-sizing:border-box;
+  width: 200px;
+  height: 200px;
+}
+
+/* Flip piece size card 2x */
+.flip-container.card-2x, .front.card-2x, .back.card-2x {
+  box-sizing:border-box;
+  width: 400px;
+  height: 200px;
 }
 
 /* Card flipping */
@@ -111,13 +151,6 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotateY(180deg);
-}
-
-/* Flip piece size */
-.flip-container.card, .front.card, .back.card {
-  box-sizing:border-box;
-  width: 200px;
-  height: 200px;
 }
 
 /* Flip speed */
